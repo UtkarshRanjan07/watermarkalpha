@@ -77,7 +77,7 @@ const About = () => {
                     <li className="flex items-start">
                       <span className="flex-shrink-0 h-6 w-6 bg-watermark-gold rounded-full flex items-center justify-center text-black font-bold mr-3 mt-0.5">✓</span>
                       <div>
-                        <h3 className="font-semibold text-white">Control of assets</h3>
+                        <h3 className="font-semibold text-white">Control of Assets</h3>
                         <p className="text-zinc-400">Investments are managed directly from the client's account preventing cross-border payments or losing custody of your assets</p>
                       </div>
                     </li>
