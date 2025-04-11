@@ -1,4 +1,3 @@
-'use client';
 
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
@@ -6,7 +5,6 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { useToast } from '@/hooks/use-toast';
 import { Send } from 'lucide-react';
-import emailjs from 'emailjs-com';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -26,38 +24,24 @@ const ContactForm = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
-
-    emailjs.send(
-      'YOUR_SERVICE_ID',
-      'YOUR_TEMPLATE_ID',
-      {
-        from_name: formData.name,
-        from_email: formData.email,
-        phone: formData.phone,
-        message: formData.message,
-      },
-      'YOUR_PUBLIC_KEY' // e.g., 'user_xxxxxxxxxxxx'
-    ).then(() => {
+    
+    // Simulate form submission
+    setTimeout(() => {
       toast({
         title: "Message sent successfully",
         description: "We'll get back to you as soon as possible.",
+        variant: "default",
       });
+      
       setFormData({
         name: '',
         email: '',
         phone: '',
         message: '',
       });
-    }).catch((error) => {
-      console.error("EmailJS Error:", error);
-      toast({
-        title: "Failed to send message",
-        description: "Please try again later.",
-        variant: "destructive",
-      });
-    }).finally(() => {
+      
       setLoading(false);
-    });
+    }, 1500);
   };
 
   return (

@@ -46,12 +46,12 @@ const About = () => {
               <p className="text-xl text-zinc-300 mb-8">
                 We bridge traditional wealth management with digital asset opportunities, offering a structured approach to crypto investing.
               </p>
-              
+
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-watermark-gold to-watermark-goldLight rounded-lg blur opacity-25"></div>
                 <div className="relative bg-zinc-900 border border-zinc-800 rounded-lg p-8">
                   <h2 className="text-2xl font-bold mb-4">Why Watermark Alpha?</h2>
-                  
+
                   <ul className="space-y-4">
                     <li className="flex items-start">
                       <span className="flex-shrink-0 h-6 w-6 bg-watermark-gold rounded-full flex items-center justify-center text-black font-bold mr-3 mt-0.5">✓</span>
@@ -87,9 +87,9 @@ const About = () => {
             </div>
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-watermark-goldDark to-watermark-gold rounded-xl blur opacity-30"></div>
-              <img 
-                src="https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2204&q=80" 
-                alt="Digital Asset Management" 
+              <img
+                src="https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2204&q=80"
+                alt="Digital Asset Management"
                 className="relative rounded-xl object-cover w-full h-[500px]"
               />
             </div>
@@ -110,9 +110,9 @@ const About = () => {
                 <div className="w-full md:w-1/3">
                   <div className="relative">
                     <div className="absolute -inset-1 bg-gradient-to-r from-watermark-goldDark to-watermark-gold rounded-xl blur opacity-30"></div>
-                    <img 
-                      src={founder.image} 
-                      alt={founder.name} 
+                    <img
+                      src={founder.image}
+                      alt={founder.name}
                       className="relative w-full h-[400px] object-cover object-center rounded-xl"
                     />
                   </div>
@@ -140,7 +140,7 @@ const About = () => {
                 <div className="w-full md:w-2/3">
                   <div className="bg-zinc-800 rounded-xl p-8 h-full">
                     {founder.bio.split('\n\n').map((paragraph, i) => (
-                      <p key={i} className="text-zinc-300 mb-4">{paragraph}</p>
+                      <p key={i} className="text-zinc-300 mb-6 leading-relaxed">{paragraph}</p>
                     ))}
                   </div>
                 </div>
