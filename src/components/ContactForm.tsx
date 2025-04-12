@@ -1,5 +1,5 @@
-
-import { useState } from 'react';
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -7,80 +7,72 @@ import { useToast } from '@/hooks/use-toast';
 import { Send } from 'lucide-react';
 
 const ContactForm = () => {
+  const formRef = useRef<HTMLFormElement>(null);
   const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    message: '',
-  });
   const [loading, setLoading] = useState(false);
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!formRef.current) return;
+
     setLoading(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent successfully",
-        description: "We'll get back to you as soon as possible.",
-        variant: "default",
+
+    emailjs
+      .sendForm(
+        'service_8g746bm',          // Replace with your actual EmailJS service ID
+        'template_2xypdms',         // Replace with your EmailJS template ID
+        formRef.current,
+        { publicKey: 'stNCY87XpGeEo74Hj' } // Replace with your actual EmailJS public key
+      )
+      .then(() => {
+        toast({
+          title: 'Message sent successfully',
+          description: "We'll get back to you as soon as possible.",
+        });
+        formRef.current?.reset();
+        setLoading(false);
+      })
+      .catch((error) => {
+        toast({
+          title: 'Failed to send message',
+          description: error.text || 'Something went wrong.',
+          variant: 'destructive',
+        });
+        setLoading(false);
       });
-      
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        message: '',
-      });
-      
-      setLoading(false);
-    }, 1500);
   };
 
   return (
     <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-6 md:p-8">
       <h3 className="text-2xl font-bold mb-6">Get in Touch</h3>
-      <form onSubmit={handleSubmit}>
+      <form ref={formRef} onSubmit={handleSubmit}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-zinc-400 mb-1">Full Name</label>
+            <label htmlFor="from_name" className="block text-sm font-medium text-zinc-400 mb-1">Full Name</label>
             <Input
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
+              id="from_name"
+              name="from_name"
               required
               placeholder="Your name"
               className="bg-zinc-800 border-zinc-700 text-white"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-zinc-400 mb-1">Email Address</label>
+            <label htmlFor="from_email" className="block text-sm font-medium text-zinc-400 mb-1">Email Address</label>
             <Input
-              id="email"
-              name="email"
+              id="from_email"
+              name="from_email"
               type="email"
-              value={formData.email}
-              onChange={handleChange}
               required
               placeholder="your.email@example.com"
               className="bg-zinc-800 border-zinc-700 text-white"
             />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-zinc-400 mb-1">Phone Number</label>
+            <label htmlFor="from_phone" className="block text-sm font-medium text-zinc-400 mb-1">Phone Number</label>
             <Input
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
+              id="from_phone"
+              name="from_phone"
               placeholder="Your phone number (optional)"
               className="bg-zinc-800 border-zinc-700 text-white"
             />
@@ -90,8 +82,6 @@ const ContactForm = () => {
             <Textarea
               id="message"
               name="message"
-              value={formData.message}
-              onChange={handleChange}
               required
               placeholder="How can we help you?"
               rows={4}
