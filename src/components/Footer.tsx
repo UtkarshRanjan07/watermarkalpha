@@ -5,17 +5,17 @@ import { Mail, Phone, Linkedin, Twitter } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  
+
   return (
     <footer className="bg-zinc-950 text-white">
       <div className="max-w-7xl mx-auto px-4 pt-16 pb-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <Link to="/" className="inline-block mb-6">
-              <img 
+              <img
                 src="/lovable-uploads/3a96efd8-34e7-4870-947c-9ab9f4346c48.png"
-                alt="Watermark Alpha Logo" 
-                className="h-20 w-auto"
+                alt="Watermark Alpha Logo"
+                className="h-28 w-auto"
               />
             </Link>
             {/* <p className="text-zinc-400 mb-6">
@@ -34,7 +34,7 @@ const Footer = () => {
               </Button>
             </div>
           </div>
-          
+
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-3">
@@ -60,14 +60,14 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-semibold text-lg mb-4">Contact</h3>
             <ul className="space-y-3">
               <li className="flex items-center">
                 <Mail size={16} className="text-watermark-gold mr-2" />
-                <a 
-                  href="mailto:crypto@watermarkalpha.org" 
+                <a
+                  href="mailto:crypto@watermarkalpha.org"
                   className="text-zinc-400 hover:text-watermark-gold transition-colors"
                 >
                   crypto@watermarkalpha.org
@@ -75,8 +75,8 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Phone size={16} className="text-watermark-gold mr-2" />
-                <a 
-                  href="tel:+918877990038" 
+                <a
+                  href="tel:+918877990038"
                   className="text-zinc-400 hover:text-watermark-gold transition-colors"
                 >
                   +91 88779 90038
@@ -84,7 +84,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           <div>
             <h3 className="font-semibold text-lg mb-4">Subscribe</h3>
             <p className="text-zinc-400 mb-4">
@@ -104,7 +104,7 @@ const Footer = () => {
             </form>
           </div>
         </div>
-        
+
         <div className="border-t border-zinc-800 pt-8">
           <p className="text-zinc-500 text-sm text-center">
             &copy; {currentYear} Watermark Alpha. All rights reserved.

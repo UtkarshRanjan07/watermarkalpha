@@ -36,26 +36,25 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex-shrink-0 flex items-center">
-          <Link to="/" className="flex items-center">
-              <img 
-                src="/lovable-uploads/Watermark_Alpha_Logo.png" 
-                alt="Watermark Alpha Logo" 
-                className="h-16 w-auto" // Changed from h-12 to h-14 for a slightly bigger logo
+            <Link to="/" className="flex items-center">
+              <img
+                src="/lovable-uploads/Logo.png"
+                alt="Watermark Alpha Logo"
+                className="h-20 w-auto" // Increased from h-16 to h-20 for a larger logo
               />
             </Link>
           </div>
-          
+
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`${
-                    location.pathname === link.path
+                  className={`${location.pathname === link.path
                       ? 'text-watermark-gold'
                       : 'text-white hover:text-watermark-gold'
-                  } transition-colors duration-300 font-medium`}
+                    } transition-colors duration-300 font-medium`}
                 >
                   {link.name}
                 </Link>
@@ -65,7 +64,7 @@ const Navbar = () => {
               </Button>
             </div>
           </div>
-          
+
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
@@ -86,11 +85,10 @@ const Navbar = () => {
                 key={link.name}
                 to={link.path}
                 onClick={() => setIsOpen(false)}
-                className={`${
-                  location.pathname === link.path
+                className={`${location.pathname === link.path
                     ? 'text-watermark-gold'
                     : 'text-white hover:text-watermark-gold'
-                } block px-3 py-2 text-base font-medium`}
+                  } block px-3 py-2 text-base font-medium`}
               >
                 {link.name}
               </Link>
