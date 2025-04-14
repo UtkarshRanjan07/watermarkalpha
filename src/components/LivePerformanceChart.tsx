@@ -13,6 +13,7 @@ import { MarketDataPoint } from '../types/chart';
 import { historicalMarketData } from './data/historicalData';
 import CustomTooltip from './CustomTooltip';
 
+// Convert absolute values to percentage change compared to first point
 const calculatePercentageChange = (data: MarketDataPoint[]): MarketDataPoint[] => {
   if (!data.length) return data;
   const base = data[0];
@@ -25,14 +26,16 @@ const calculatePercentageChange = (data: MarketDataPoint[]): MarketDataPoint[] =
 };
 
 const LivePerformanceChart = () => {
-  const initialYear = historicalMarketData[0].timestamp.split('-')[0];
-  const [data, setData] = useState<MarketDataPoint[]>([]);
-  const [selectedYear, setSelectedYear] = useState<string>(initialYear);
+  // Extract unique years and sort descending (most recent first)
+  const uniqueYears = Array.from(
+    new Set(historicalMarketData.map(d => d.timestamp.split('-')[0]))
+  ).sort((a, b) => parseInt(b) - parseInt(a));
 
-  const uniqueYears = Array.from(new Set(historicalMarketData.map(d => d.timestamp.split('-')[0])));
+  const [selectedYear, setSelectedYear] = useState<string>(uniqueYears[0]);
+  const [data, setData] = useState<MarketDataPoint[]>([]);
 
   const formatTimestamp = useCallback((timestamp: string): string => {
-    const [year, month] = timestamp.split('-');
+    const [_, month] = timestamp.split('-');
     const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     return monthNames[parseInt(month) - 1];
   }, []);
