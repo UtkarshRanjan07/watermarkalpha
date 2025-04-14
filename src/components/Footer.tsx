@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
 import { Mail, Phone, Linkedin, Twitter } from 'lucide-react';
@@ -9,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-zinc-950 text-white">
       <div className="max-w-7xl mx-auto px-4 pt-16 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           <div>
             <Link to="/" className="inline-block mb-6">
               <img
@@ -18,9 +17,6 @@ const Footer = () => {
                 className="h-28 w-auto"
               />
             </Link>
-            {/* <p className="text-zinc-400 mb-6">
-              Decoding Crypto, Delivering Alpha
-            </p> */}
             <div className="flex space-x-4">
               <Button asChild variant="outline" size="icon" className="rounded-full border-zinc-800 hover:border-watermark-gold hover:bg-transparent">
                 <a href="https://www.linkedin.com/in/harsh-dalmia-ab46bba3/" target="_blank" rel="noreferrer">
@@ -83,25 +79,6 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Subscribe</h3>
-            <p className="text-zinc-400 mb-4">
-              Subscribe to our newsletter for the latest updates and insights.
-            </p>
-            <form className="space-y-3">
-              <div>
-                <input
-                  type="email"
-                  placeholder="Your email address"
-                  className="w-full px-4 py-2 bg-zinc-900 border border-zinc-800 rounded-md focus:outline-none focus:ring-2 focus:ring-watermark-gold focus:border-transparent"
-                />
-              </div>
-              <Button type="submit" className="gold-button w-full rounded-md">
-                Subscribe
-              </Button>
-            </form>
           </div>
         </div>
 

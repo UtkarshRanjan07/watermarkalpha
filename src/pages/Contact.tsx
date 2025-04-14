@@ -8,12 +8,24 @@ import { Mail, Phone, Send, Linkedin, Twitter } from 'lucide-react';
 
 const Contact = () => {
   const formRef = useRef<HTMLFormElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
   const { toast } = useToast();
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!formRef.current) return;
+
+    const message = messageRef.current?.value || '';
+    const wordCount = message.trim().split(/\s+/).length;
+    if (wordCount > 60) {
+      toast({
+        title: 'Message too long',
+        description: 'Please limit your message to 60 words.',
+        variant: 'destructive',
+      });
+      return;
+    }
 
     setLoading(true);
 
@@ -127,6 +139,7 @@ const Contact = () => {
                     placeholder="How can we help you?"
                     rows={6}
                     className="bg-zinc-800 border-zinc-700 text-white resize-none"
+                    ref={messageRef}
                   />
                 </div>
               </div>
