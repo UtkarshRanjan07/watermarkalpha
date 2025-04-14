@@ -1,4 +1,4 @@
-import { MarketDataPoint } from "../types/chart";
+import { MarketDataPoint } from "../types/chart.tsx";
 
 // Initial historical data
 const initialData: MarketDataPoint[] = [

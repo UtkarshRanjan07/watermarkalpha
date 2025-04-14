@@ -1,4 +1,4 @@
-import { TooltipProps } from "../types/chart";
+import { TooltipProps } from "../types/chart.tsx";
 
 const CustomTooltip = ({ active, payload, label }: TooltipProps) => {
   if (active && payload && payload.length) {
