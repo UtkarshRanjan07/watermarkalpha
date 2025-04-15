@@ -19,10 +19,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        'service_8g746bm',          // Replace with your actual EmailJS service ID
-        'template_2xypdms',         // Replace with your EmailJS template ID
+        'service_zr4kh69',          // Replace with your actual EmailJS service ID
+        'template_13pmy4u',         // Replace with your EmailJS template ID
         formRef.current,
-        { publicKey: 'stNCY87XpGeEo74Hj' } // Replace with your actual EmailJS public key
+        { publicKey: 'n0UaB0mDzQZF9eAUx' } // Replace with your actual EmailJS public key
       )
       .then(() => {
         toast({

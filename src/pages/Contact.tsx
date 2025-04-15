@@ -31,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        'service_8g746bm',        // your EmailJS service ID
-        'template_2xypdms',       // your template ID
+        'service_zr4kh69',        // your EmailJS service ID
+        'template_13pmy4u',       // your template ID
         formRef.current,
-        { publicKey: 'stNCY87XpGeEo74Hj' } // your public key
+        { publicKey: 'n0UaB0mDzQZF9eAUx' } // your public key
       )
       .then(() => {
         toast({
