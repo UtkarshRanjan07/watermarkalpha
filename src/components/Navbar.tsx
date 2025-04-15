@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -24,10 +23,11 @@ const Navbar = () => {
     };
   }, []);
 
+  // Swapped "Strategy" and "About Us"
   const navLinks = [
     { name: 'Home', path: '/' },
-    { name: 'Strategy', path: '/strategy' },
     { name: 'About Us', path: '/about' },
+    { name: 'Strategy', path: '/strategy' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -40,7 +40,7 @@ const Navbar = () => {
               <img
                 src="/lovable-uploads/Logo.png"
                 alt="Watermark Alpha Logo"
-                className="h-20 w-auto" // Increased from h-16 to h-20 for a larger logo
+                className="h-20 w-auto"
               />
             </Link>
           </div>

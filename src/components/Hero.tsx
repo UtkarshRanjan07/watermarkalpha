@@ -10,7 +10,8 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-watermark-gold opacity-20 blur-3xl z-0 animate-float"></div>
       </div>
 
-      <div className="container relative z-20 flex items-center justify-center min-h-screen">
+      <div className="container relative z-20 flex items-center justify-center min-h-screen pt-24">
+
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto">
           <img 
             src="/lovable-uploads/3a96efd8-34e7-4870-947c-9ab9f4346c48.png" 
@@ -30,9 +31,10 @@ const Hero = () => {
             <Button asChild className="gold-button px-8 py-6 rounded-md text-lg">
               <Link to="/contact">Get In Touch</Link>
             </Button>
-            <Button asChild variant="outline" className="border-watermark-gold text-watermark-gold hover:bg-watermark-gold/10 px-8 py-6 rounded-md text-lg">
+            <Button asChild variant="outline" className="border-watermark-gold text-watermark-gold hover:bg-watermark-gold/10 hover:text-white px-8 py-6 rounded-md text-lg">
               <Link to="/contact">Join Watermark Alpha</Link>
             </Button>
+
           </div>
         </div>
       </div>
