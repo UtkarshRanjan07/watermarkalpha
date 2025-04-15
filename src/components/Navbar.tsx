@@ -60,7 +60,7 @@ const Navbar = () => {
                 </Link>
               ))}
               <Button asChild className="gold-button rounded-md">
-                <Link to="/contact">Get Started</Link>
+                <Link to="/contact">Invest</Link>
               </Button>
             </div>
           </div>
@@ -95,7 +95,7 @@ const Navbar = () => {
             ))}
             <div className="pt-2">
               <Button asChild className="gold-button w-full rounded-md">
-                <Link to="/contact" onClick={() => setIsOpen(false)}>Get Started</Link>
+                <Link to="/contact" onClick={() => setIsOpen(false)}>Invest</Link>
               </Button>
             </div>
           </div>
