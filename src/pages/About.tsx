@@ -5,7 +5,7 @@ const founderData = [
   {
     name: 'Harsh Dalmia',
     title: 'Co-Founder, Chairman & MD',
-    image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80',
+    image: '/lovable-uploads/Harsh.jpeg',
     bio: `Harsh Dalmia brings over 25 years of distinguished experience in investment banking and financial services. A recognized leader in wealth management innovation, he has served ultra-high-net-worth individuals and family offices globally, crafting bespoke solutions that integrate traditional and emergent asset classes.
 
 With a proven record of syndicating over $3 billion for Indian corporates through complex fundraising and deal structuring, Harsh founded Watermark Capital in 2000, establishing it as a leader in debt syndication and asset management.
@@ -18,7 +18,7 @@ Harsh holds a Bachelor of Business Administration in Economics and Entrepreneurs
   {
     name: 'Kushaal Patel',
     title: 'Co-Founder, CEO',
-    image: 'https://images.unsplash.com/photo-1548142813-c348350df52b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=778&q=80',
+    image: '/lovable-uploads/Kushaal.jpeg',
     bio: `Kushaal Patel possesses over 7 years of experience in Web3 and crypto. He has been managing portfolios for high-net-worth individuals and family offices since 2019.
 
 Prior to leading Watermark Alpha, he operated a private crypto advisory and brokerage firm, specializing in jurisdiction-specific on/off-ramping, custody solutions, compliance frameworks, and risk-adjusted strategies. He also served as COO of EDDAVerse, a prominent Web3 enabler and IP holder. EDDAVerse provided end-to-end solutions for global brands and celebrities through the world of blockchain and decentralization.
