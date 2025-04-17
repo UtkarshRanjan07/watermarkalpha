@@ -19,12 +19,12 @@ const Footer = () => {
             </Link>
             <div className="flex space-x-4">
               <Button asChild variant="outline" size="icon" className="rounded-full border-zinc-800 hover:border-watermark-gold hover:bg-transparent">
-                <a href="https://www.linkedin.com/in/harsh-dalmia-ab46bba3/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/company/watermark-alpha/posts/?feedView=all" target="_blank" rel="noreferrer">
                   <Linkedin size={18} className="text-zinc-400 hover:text-watermark-gold" />
                 </a>
               </Button>
               <Button asChild variant="outline" size="icon" className="rounded-full border-zinc-800 hover:border-watermark-gold hover:bg-transparent">
-                <a href="https://x.com/KushaalPatel" target="_blank" rel="noreferrer">
+                <a href="https://x.com/WatermarkAlpha" target="_blank" rel="noreferrer">
                   <Twitter size={18} className="text-zinc-400 hover:text-watermark-gold" />
                 </a>
               </Button>
