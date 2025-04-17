@@ -19,7 +19,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                <span className="gold-gradient">Ready to optimize your crypto portfolio?</span>
+                <span className="gold-gradient">Ready to start your crypto investment journey?</span>
               </h2>
               <p className="text-zinc-300 mb-8">
                 Take the first step towards a structured, risk-managed approach to digital asset investments. Our team of experts is ready to help you navigate the complexities of crypto investing.
