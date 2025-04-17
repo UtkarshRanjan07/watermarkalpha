@@ -13,7 +13,7 @@ With a proven record of syndicating over $3 billion for Indian corporates throug
 An early adopter of crypto since 2016, Harsh has developed sophisticated digital asset allocation and risk management methodologies, underpinned by rigorous market analysis. This expertise culminated in the creation of Watermark Alpha, offering clients compliant, risk-managed exposure to digital assets.
 
 Harsh holds a Bachelor of Business Administration in Economics and Entrepreneurship from Babson College (2000) and is certified by the Securities and Exchange Board of India (SEBI) via the NISM examination. He is an active member of the Punjab and Haryana Chamber of Commerce and Industry and TiE Mumbai, driving economic advancement through technological innovation.`,
-    linkedin: 'https://www.linkedin.com/in/harsh-dalmia-ab46bba3/'
+    linkedin: 'https://www.linkedin.com/in/harsh-dalmia-9696711b7/'
   },
   {
     name: 'Kushaal Patel',
