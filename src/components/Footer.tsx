@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, Linkedin, Twitter, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -77,6 +77,13 @@ const Footer = () => {
                 >
                   +91 88779 90038
                 </a>
+              </li>
+              {/* New Address Section */}
+              <li className="flex items-center">
+                <MapPin size={21} className="text-watermark-gold mr-2" />
+                <span className="text-zinc-400 hover:text-watermark-gold transition-colors">
+                  1009, 1010 Maker Chambers 5, Nariman Point, Mumbai 400021, India
+                </span>
               </li>
             </ul>
           </div>
