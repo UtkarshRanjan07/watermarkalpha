@@ -82,7 +82,7 @@ const Footer = () => {
               <li className="flex items-center">
                 <MapPin size={21} className="text-watermark-gold mr-2" />
                 <span className="text-zinc-400 hover:text-watermark-gold transition-colors">
-                  1009, 1010 Maker Chambers 5, Nariman Point, Mumbai 400021, India
+                 1009 - 1011, Maker Chambers 5, Nariman Point, Mumbai 400021, India
                 </span>
               </li>
             </ul>
