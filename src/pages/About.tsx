@@ -19,13 +19,13 @@ Harsh holds a Bachelor of Business Administration in Economics and Entrepreneurs
     name: 'Kushaal Patel',
     title: 'Co-Founder, CEO',
     image: '/lovable-uploads/Kushaal.jpeg',
-    bio: `Kushaal Patel possesses over 7 years of experience in Web3 and crypto. He has been managing portfolios for high-net-worth individuals and family offices since 2019.
+    bio: `Kushaal Patel has been a pioneering force in the Web3 and crypto space since 2016. Since 2019, he has served as a trusted advisor to high-net-worth individuals and family offices, guiding them through the complexities of digital asset investment.
 
-Prior to leading Watermark Alpha, he operated a private crypto advisory and brokerage firm, specializing in jurisdiction-specific on/off-ramping, custody solutions, compliance frameworks, and risk-adjusted strategies. He also served as COO of EDDAVerse, a prominent Web3 enabler and IP holder. EDDAVerse provided end-to-end solutions for global brands and celebrities through the world of blockchain and decentralization.
+Prior to founding Watermark Alpha, Kushaal led a private crypto advisory specializing in jurisdiction-specific on/off-ramping, advanced custody solutions, compliance frameworks, risk-adjusted strategies, and deep market research. He also served as Chief Operating Officer at EDDAVerse, a leading Web3 enabler and IP holder, where he oversaw strategic growth and innovation.
 
-Kushaal advocates a disciplined, focused approach to sectoral exposure in digital assets, rejecting over-diversification in favor of maximizing strategic opportunities. By applying traditional finance principles to this space, he ensures a robust, risk-managed framework.
+Kushaal champions a disciplined, conviction-based approach to digital asset allocation, favoring targeted sectoral exposure over excessive diversification to capitalize on high-conviction opportunities. By integrating traditional finance principles with cutting-edge digital asset strategies, he ensures robust, risk-managed portfolios that deliver consistent value.
 
-As a key opinion leader for Crypto in India, he contributed to the G20 panel on blockchain during India's presidency. Kushaal's focus throughout his career has been in bridging conventional wealth management with the evolving digital asset landscape.`,
+Recognized as a thought leader in India’s crypto landscape, Kushaal contributed to the G20 panel on blockchain during India’s presidency, shaping the dialogue around regulation and innovation. Throughout his career, he has remained dedicated to bridging the gap between conventional wealth management and the rapidly evolving digital asset ecosystem.`,
     linkedin: 'https://www.linkedin.com/in/thekushaalpatel/',
     twitter: 'https://x.com/KushaalPatel'
   }
@@ -43,7 +43,7 @@ const About = () => {
                 <span className="gold-gradient">Our Vision</span>
               </h1>
               <p className="text-xl text-zinc-300 mb-8">
-                We bridge traditional wealth management with digital asset opportunities, offering a structured approach to crypto investing.
+                We deliver advice that bridges traditional wealth management principles with digital asset opportunities.
               </p>
 
               <div className="relative">
@@ -56,7 +56,7 @@ const About = () => {
                       <span className="flex-shrink-0 h-6 w-6 bg-watermark-gold rounded-full flex items-center justify-center text-black font-bold mr-3 mt-0.5">✓</span>
                       <div>
                         <h3 className="font-semibold text-white">Experienced Leadership</h3>
-                        <p className="text-zinc-400">Managed by seasoned professionals with deep market expertise</p>
+                        <p className="text-zinc-400">Team of seasoned professionals with deep and extensive market expertise</p>
                       </div>
                     </li>
                     <li className="flex items-start">
@@ -77,7 +77,7 @@ const About = () => {
                       <span className="flex-shrink-0 h-6 w-6 bg-watermark-gold rounded-full flex items-center justify-center text-black font-bold mr-3 mt-0.5">✓</span>
                       <div>
                         <h3 className="font-semibold text-white">Control of Assets</h3>
-                        <p className="text-zinc-400">Investments are managed directly from the client's account preventing cross-border payments or losing custody of your assets</p>
+                        <p className="text-zinc-400">Watermark Alpha does not act as an asset manager, client funds continue to remain in complete control and discretion of the client.</p>
                       </div>
                     </li>
                   </ul>
