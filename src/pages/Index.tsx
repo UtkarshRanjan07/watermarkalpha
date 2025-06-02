@@ -28,13 +28,13 @@ const Index = () => {
                 <div className="bg-zinc-800 p-5 rounded-lg">
                   <h3 className="text-watermark-gold font-semibold mb-2">For Investors</h3>
                   <p className="text-sm text-zinc-400">
-                    Diversify your portfolio with our market-neutral strategies that deliver consistent returns.
+                    Diversify your investments with Watermark Alpha’s guidance on crypto assets.
                   </p>
                 </div>
                 <div className="bg-zinc-800 p-5 rounded-lg">
                   <h3 className="text-watermark-gold font-semibold mb-2">For Professionals</h3>
                   <p className="text-sm text-zinc-400">
-                    Join our team of experts and contribute to the future of digital asset management.
+                    Join our team of experts and contribute to the future of crypto advisory.
                   </p>
                 </div>
               </div>

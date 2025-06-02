@@ -20,11 +20,11 @@ const Hero = () => {
           />
           
           <h1 className="text-4xl md:text-6xl font-extrabold mb-6 animate-fade-in">
-            <span className="gold-gradient">Global Digital Asset Management</span>
+            <span className="gold-gradient">Global Crypto Investment Advisory</span>
           </h1>
           
           <p className="text-white/90 text-lg md:text-xl max-w-3xl mx-auto mb-10 animate-fade-in">
-            Watermark Alpha offers a crypto advisory service that delivers risk-managed, tax-optimized exposure to digital (crypto) assets, leveraging a structured investment approach.
+          Watermark Alpha offers a crypto advisory service that helping clients achieve risk-managed, tax-optimized exposure to digital (crypto) assets, leveraging a structured investment approach.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 animate-fade-in mb-32">

@@ -8,7 +8,7 @@ const Performance = () => {
           <span className="gold-gradient">Benchmark Selection</span>
         </h2>
         <p className="text-center text-zinc-400 mb-12 max-w-2xl mx-auto">
-          Watermark Alpha aims to surpass Bitcoin, Nasdaq-100, and Nifty 50—because alpha is found in exceeding benchmarks.
+        Watermark Alpha’s target is for client’s returns to surpass Bitcoin, Nasdaq-100, and Nifty 50.
         </p>
         
         <LivePerformanceChart />
